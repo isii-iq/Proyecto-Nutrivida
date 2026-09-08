@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica NutriVida</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header>
+  <div class="contenedor-titulo">
+        <img src="img/logo.png" alt="logo" class="logo">
+        <h1>CLÍNICA NUTRICIONAL NUTRIVIDA</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+   <h2>Crear cuenta</h2>
+ 
+  <form id = "formulario-registro">
+ 
+      <label for="nombre">Nombre completo</label><br>
+      <input type="text" id="nombre" placeholder="Ej: Juan Pérez" required><br><br>
+ 
+      <label for="correo">Correo electrónico</label><br>
+      <input type="email" id="correo" placeholder="ejemplo@duoc.cl" required><br><br>
+ 
+      <label for="correo-confirmar">Confirmar correo electrónico</label><br>
+      <input type="email" id="confirmar-correo" placeholder="Repite tu correo" required><br><br>
+ 
+      <label for="contrasena">Contraseña</label><br>
+      <input type="password" id="contrasena" placeholder="Mínimo 8 caracteres" minlength="8" required><br><br>
+ 
+      <label for="contrasena-confirmar">Confirmar contraseña</label><br>
+      <input type="password" id="confirmar-contrasena" placeholder="Repite tu contraseña" minlength="8" required><br><br>
+ 
+      <label for="telefono">Teléfono (opcional)</label><br>
+      <input type="tel" id="telefono" placeholder="+56 9 1234 5678"><br><br>
+
+      <label for = "direccion">Dirección</label><br>
+      <input type="text" id = "direccion" placeholder = "Ej: Calle 123, Temuco" required><br><br>
+ 
+    <br>
+    <button type="submit">Registrarse</button>
+ 
+  </form>
+</body>
+</html>
