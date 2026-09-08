@@ -1,5 +1,5 @@
 header{
-     background: #4b88628b;
+     background: #8ead9e;
   padding: 5px 10px;
 
   position: sticky;
@@ -9,7 +9,7 @@ header h1 {
     text-align: center;
     font-size: 45px; 
     font-family: "Trebuchet MS", Arial, sans-serif;
-    color: #fff;
+    color: #245b43;
 }
 
 header ul {
@@ -32,15 +32,15 @@ header a:hover {
 }
 
 .logo {
-    width: 100px; 
-    margin: 10px; 
+    width: 10px; 
+    margin: 0; 
     margin-top: 0;
     margin-bottom: 0;
     justify-content: right;
 }
 
 .boton-registro {
-    background-color: #4CAF50;
+    background-color: #387a60;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -50,6 +50,55 @@ header a:hover {
     
     position: absolute;
     right: 20px;
+    top: 80%; 
+    transform: translateY(-50%); 
+}
+
+.boton-reservar-hora {
+    background-color: #c7d471;
+    color: rgb(255, 253, 253);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block; 
+    width: 350px; 
+    margin-top: 30px; 
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: 100px;
+}
+
+
+.presentacion {
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 60px 40px;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.texto-presentacion p {
+    font-size: 23px;
+    line-height: 1.6;
+    color: #333;
+   
+}
+
+.boton-iniciar-sesion {
+    background-color: #387a60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+    position: absolute;
+    right: 160px;
     top: 80%; 
     transform: translateY(-50%); 
 }
