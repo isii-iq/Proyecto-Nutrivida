@@ -1,0 +1,30 @@
+header{
+     background: #67aa80;
+  padding: 5px 10px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 45px; 
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #fff;
+}
+
+header ul {
+    list-style: none;   
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center; 
+    gap: 30px; }
+
+header a {
+    text-decoration: none; 
+    color: rgb(34, 74, 57); 
+    font-family: system-ui, "Segoe UI", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+header a:hover {
+    color: #b5e8c7;
+}
