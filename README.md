@@ -1,6 +1,6 @@
 # Proyecto-Nutrivida
 
-Proyecto para la Clínica Nutricional NutriVida, una clínica de Temuco fundada en 2016 que atiende a pacientes con distintos objetivos (pérdida de peso, control de enfermedades metabólicas, nutrición deportiva y alimentación vegetariana o vegana). La idea es que los pacientes puedan conocer los servicios tas, agendar horas en línea, y que el personal pueda gestionar el acceso a través de un portal corporativo y roles específicos.
+Proyecto para la Clínica Nutricional NutriVida, una clínica de Temuco fundada en 2016 que atiende a pacientes con distintos objetivos (pérdida de peso, control de enfermedades metabólicas, nutrición deportiva y alimentación vegetariana o vegana). La idea es que los pacientes puedan conocer los servicios, agendar horas en línea, y que el personal pueda gestionar el acceso a través de un portal corporativo y roles específicos.
 
 ---
 
