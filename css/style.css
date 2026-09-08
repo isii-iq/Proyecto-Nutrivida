@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box; 
+    font-family: system-ui, "Segoe UI", Arial, sans-serif;
+}
+
 header{
      background: #8ead9e;
   padding: 5px 10px;
@@ -27,6 +32,7 @@ header a {
     font-size: 18px;
     
 }
+
 header a:hover {
     color: #b5e8c7;
 }
