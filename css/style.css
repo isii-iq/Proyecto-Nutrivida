@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box; 
+    font-family: system-ui, "Segoe UI", Arial, sans-serif;
+}
+
 header{
      background: #8ead9e;
   padding: 5px 10px;
@@ -27,6 +32,7 @@ header a {
     font-size: 18px;
     
 }
+
 header a:hover {
     color: #b5e8c7;
 }
@@ -236,11 +242,6 @@ h2 {
     background-color: #b5e8c7;
 }
 
-.icono {
-    width: 100px; 
-    height: auto; 
-    margin-top: 20px; 
-}
 
 html {
     scroll-behavior: smooth;
@@ -312,20 +313,6 @@ html {
 }
 
 .seccion-servicios {
-    margin-top: 100px; 
-    margin-bottom: 60px; 
-    padding: 0 20px;
-}
-
-
-.titulo-servicios {
-    text-align: center;
-    color: rgb(34, 74, 57);
-    font-size: 36px;
-    margin-bottom: 50px;
-}
-
-.seccion-servicios {
     margin-top: 150px; 
     margin-bottom: 300px; 
     padding: 0 20px;
@@ -336,63 +323,5 @@ html {
     text-align: center;
     color: rgb(34, 74, 57);
     font-size: 36px;
-    margin-bottom: 50px; 
-}
-
-.seccion-reserva {
-    display: flex;
-    justify-content: center;
-    padding: 60px 20px;
-}
-
-
-.contenedor-formulario {
-    background-color: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(34, 74, 57, 0.08);
-    width: 100%;
-    max-width: 450px; 
-    border-top: 5px solid #c7d471;
-}
-
-.contenedor-formulario h3 {
-    color: rgb(34, 74, 57);
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 30px;
-}
-
-grupo-input {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.grupo-input label {
-    font-weight: bold;
-    color: #444;
-    margin-bottom: 8px;
-    font-size: 15px;
-}
-
-.grupo-input input {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    font-family: inherit;
-    color: #333;
-}
-
-
-.grupo-input input:focus {
-    outline: none;
-    border-color: #387a60; 
-    box-shadow: 0 0 5px rgba(56, 122, 96, 0.3);
-}
-
-.btn-bloque {
-    width: 100%;
-    margin-top: 15px;
+    margin-bottom: 50px;
 }
