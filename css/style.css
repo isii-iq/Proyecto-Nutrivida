@@ -102,3 +102,23 @@ header a:hover {
     top: 80%; 
     transform: translateY(-50%); 
 }
+
+.campo-error {
+  border: 2px solid #a3242f;
+  background: #fbe9ea;
+}
+
+#formulario-registro {
+  width: 400px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+#formulario-registro input,
+#formulario-registro select {
+  text-align: center;
+}

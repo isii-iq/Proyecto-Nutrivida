@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clínica NutriVida</title>
-   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/funciones.js" defer></script>
 </head>
 <body>
-   <header>
-  <div class="contenedor-titulo">
-        <img src="img/logo.png" alt="logo" class="logo">
-        <h1>CLÍNICA NUTRICIONAL NUTRIVIDA</h1>
+  <header>
+    <div class="contenedor-titulo">
+      <img src="img/logo.png" alt="logo" class="logo">
+      <h1>CLÍNICA NUTRICIONAL NUTRIVIDA</h1>
     </div>
     <nav>
       <ul>
@@ -21,34 +22,50 @@
     </nav>
   </header>
 
-   <h2>Crear cuenta</h2>
- 
-  <form id = "formulario-registro">
- 
-      <label for="nombre">Nombre completo</label><br>
-      <input type="text" id="nombre" placeholder="Ej: Juan Pérez" required><br><br>
- 
-      <label for="correo">Correo electrónico</label><br>
-      <input type="email" id="correo" placeholder="ejemplo@duoc.cl" required><br><br>
- 
-      <label for="correo-confirmar">Confirmar correo electrónico</label><br>
-      <input type="email" id="confirmar-correo" placeholder="Repite tu correo" required><br><br>
- 
-      <label for="contrasena">Contraseña</label><br>
-      <input type="password" id="contrasena" placeholder="Mínimo 8 caracteres" minlength="8" required><br><br>
- 
-      <label for="contrasena-confirmar">Confirmar contraseña</label><br>
-      <input type="password" id="confirmar-contrasena" placeholder="Repite tu contraseña" minlength="8" required><br><br>
- 
-      <label for="telefono">Teléfono (opcional)</label><br>
-      <input type="tel" id="telefono" placeholder="+56 9 1234 5678"><br><br>
+  <h2>Crear cuenta</h2>
 
-      <label for = "direccion">Dirección</label><br>
-      <input type="text" id = "direccion" placeholder = "Ej: Calle 123, Temuco" required><br><br>
- 
-    <br>
+  <form id="formulario-registro" novalidate>
+
+    <label for="run">RUN</label><br>
+    <input type="text" id="run" placeholder="Ej: 19011022K" required><br>
+    <span id="error-run"></span><br>
+
+    <label for="nombre">Nombres</label><br>
+    <input type="text" id="nombre" placeholder="Ej: Juan Pablo"><br>
+    <span id="error-nombre"></span><br>
+
+    <label for="apellidos">Apellidos</label><br>
+    <input type="text" id="apellidos" placeholder="Ej: García López" required><br>
+    <span id="error-apellidos"></span><br>
+
+    <label for="correo">Correo electrónico</label><br>
+    <input type="email" id="correo" placeholder="ejemplo@duoc.cl" required><br>
+    <span id="error-correo"></span><br>
+
+    <label for="confirmar-correo">Confirmar correo electrónico</label><br>
+    <input type="email" id="confirmar-correo" placeholder="Repite tu correo" required><br>
+    <span id="error-confirmar-correo"></span><br>
+
+    <label for="contrasena">Contraseña</label><br>
+    <input type="password" id="contrasena" placeholder="Mínimo 8 caracteres" required><br>
+    <span id="error-contrasena"></span><br>
+
+    <label for="confirmar-contrasena">Confirmar contraseña</label><br>
+    <input type="password" id="confirmar-contrasena" placeholder="Repite tu contraseña" required><br>
+    <span id="error-confirmar-contrasena"></span><br>
+
+    <label for="telefono">Teléfono (opcional)</label><br>
+    <input type="tel" id="telefono" placeholder="+56 9 1234 5678"><br><br>
+
+    <label for="direccion">Dirección</label><br>
+    <input type="text" id="direccion" placeholder="Ej: Calle 123, Temuco" required><br>
+    <span id="error-direccion"></span><br><br>
+
     <button type="submit">Registrarse</button>
- 
+
   </form>
+
+  <span id="confirmacion"></span>
+
 </body>
 </html>
