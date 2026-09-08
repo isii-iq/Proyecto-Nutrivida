@@ -325,3 +325,38 @@ html {
     font-size: 36px;
     margin-bottom: 50px;
 }
+
+
+#mensaje-exito {
+    display: none;
+    color: rgb(34, 74, 57);
+    background-color: #b5e8c7;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.seccion-reserva {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.contenedor-formulario {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(34, 74, 57, 0.08);
+    width: 100%;
+    max-width: 450px; 
+    border-top: 5px solid #c7d471;
+}
+
+.contenedor-formulario h2 {
+    color: rgb(34, 74, 57);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}

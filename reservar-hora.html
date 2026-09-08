@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clínica NutriVida</title>
    <link rel="stylesheet" href="css/style.css">
+
+   <script src="js/script.js"></script>
+
+   
 </head>
 <body>
 
@@ -29,7 +33,7 @@
         <div class="contenedor-formulario">
             <h2>Agendar Nueva Cita</h2>
             
-            <form action="#" method="POST">
+           <form id="formulario-reserva" action="#" method="POST">
                 <div class="grupo-input">
                     <label for="nombre">Nombre Completo:</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
@@ -37,7 +41,7 @@
 
                 <div class="grupo-input">
                     <label for="rut">RUT:</label>
-                    <input type="text" id="rut" name="rut" placeholder="Ej: 12.345.678-9" required>
+                    <input type="text" id="rut" name="rut" placeholder="Ej: 123456789" required>
                 </div>
 
                 <div class="grupo-input">
@@ -52,7 +56,13 @@
 
                 <button type="submit" class="boton-reservar-hora btn-bloque">Confirmar Reserva</button>
             </form>
+
+            
+            <div id="mensaje-exito" style="display: none; color: rgb(34, 74, 57); background-color: #b5e8c7; padding: 15px; border-radius: 5px; text-align: center; margin-top: 20px; font-weight: bold;">
+                ¡Hora reservada con éxito! 
+            </div>
         </div>
+    </section>
     </section>
 
 
