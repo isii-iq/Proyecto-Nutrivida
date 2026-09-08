@@ -15,6 +15,8 @@ if (formularioRegistro) {
     const contrasena = document.querySelector('#contrasena');
     const confirmarContrasena = document.querySelector('#confirmar-contrasena');
     const direccion = document.querySelector('#direccion');
+    const rol = document.querySelector('#rol');
+
 
     const errorRun = document.querySelector('#error-run');
     const errorNombre = document.querySelector('#error-nombre');
@@ -24,6 +26,7 @@ if (formularioRegistro) {
     const errorContrasena = document.querySelector('#error-contrasena');
     const errorConfirmarContrasena = document.querySelector('#error-confirmar-contrasena');
     const errorDireccion = document.querySelector('#error-direccion');
+    const errorRol = document.querySelector('#error-rol');
 
     let formularioValido = true;
 
@@ -156,6 +159,15 @@ if (formularioRegistro) {
       formularioRegistro.reset();
     }
 
+    if (rol.value === '') {
+      rol.classList.add('campo-error');
+      errorRol.textContent = 'Debes seleccionar un rol.';
+      formularioValido = false;
+    } else {
+      rol.classList.remove('campo-error');
+      errorRol.textContent = '';
+    }
+
 
   });
 }
@@ -166,8 +178,11 @@ if (formularioLogin) {
 
     const correo = document.querySelector('#correo');
     const contrasena = document.querySelector('#contrasena');
+    const rol = document.querySelector('#rol');
+
     const errorCorreo = document.querySelector('#error-correo');
     const errorContrasena = document.querySelector('#error-contrasena');
+    const errorRol = document.querySelector('#error-rol');
 
     let formularioValido = true;
 
@@ -195,6 +210,25 @@ if (formularioLogin) {
     } else {
       contrasena.classList.remove('campo-error');
       errorContrasena.textContent = '';
+    }
+
+    if (rol.value === '') {
+      rol.classList.add('campo-error');
+      errorRol.textContent = 'Debes seleccionar un rol.';
+      formularioValido = false;
+    } else {
+      rol.classList.remove('campo-error');
+      errorRol.textContent = '';
+    }
+
+    if (formularioValido) {
+      if (rol.value === 'administrador') {
+        window.location.href = 'administrador.html';
+      } else if (rol.value === 'nutricionista') {
+        window.location.href = 'nutricionista.html';
+      } else if (rol.value === 'paciente') {
+        window.location.href = 'paciente.html';
+      }
     }
 
     if (formularioValido) {
