@@ -245,3 +245,82 @@ h2 {
 html {
     scroll-behavior: smooth;
 }
+
+
+.fondo-paciente {
+    background-color: #eef1f5;
+    font-family: system-ui, "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+
+.contenedor-servicios {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+   
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+
+.tarjeta-servicio {
+    display: flex;
+    text-decoration: none;
+    background-color: #5ea466; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden; 
+}
+
+
+.tarjeta-servicio:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.tarjeta-contenido {
+    background-color: white;
+    color: #4d9959;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+    border-radius: 8px 0 0 8px;
+}
+
+
+.tarjeta-contenido span {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+.tarjeta-flecha {
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.seccion-servicios {
+    margin-top: 100px; 
+    margin-bottom: 60px; 
+    padding: 0 20px;
+}
+
+
+.titulo-servicios {
+    text-align: center;
+    color: rgb(34, 74, 57);
+    font-size: 36px;
+    margin-bottom: 50px;
+}
