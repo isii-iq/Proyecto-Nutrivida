@@ -236,4 +236,15 @@ if (formularioLogin) {
       formularioLogin.reset();
     }
   });
+
+  const hamburguesa = document.querySelector('#hamburguesa');
+
+  if (hamburguesa) {
+    hamburguesa.addEventListener('click', function () {
+      const ul = document.querySelector('header ul');
+      const botonesNav = document.querySelector('.botones-nav');
+      ul.classList.toggle('abierto');
+      if (botonesNav) botonesNav.classList.toggle('abierto');
+    });
+  }
 }
