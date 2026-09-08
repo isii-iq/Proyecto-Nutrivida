@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clínica NutriVida</title>
    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+
+    
      <header>
   <div class="contenedor-titulo">
         <img src="img/logo.png" alt="logo" class="logo">
@@ -15,7 +17,7 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#servicios">Inicio</a></li>
+        <li><a href="paciente.html">Inicio</a></li>
         <a href="#nosotros">Nosotros</a>
         <a href="#contacto">Contacto</a>
       </ul>
@@ -23,44 +25,38 @@
   </header>
 
 
+ <section class="seccion-reserva">
+        <div class="contenedor-formulario">
+            <h2>Agendar Nueva Cita</h2>
+            
+            <form action="#" method="POST">
+                <div class="grupo-input">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+                </div>
 
-<section class="seccion-servicios" id="servicios">
-    <h3 class="titulo-servicios">Nuestros Servicios</h3>
-<div class="contenedor-servicios">
-    
-   
-    <a href="reservar-hora.html" class="tarjeta-servicio">
-        <div class="tarjeta-contenido">
-            <span>Pérdida de peso</span>
+                <div class="grupo-input">
+                    <label for="rut">RUT:</label>
+                    <input type="text" id="rut" name="rut" placeholder="Ej: 12.345.678-9" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="fecha">Selecciona una Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="hora">Selecciona una Hora:</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+
+                <button type="submit" class="boton-reservar-hora btn-bloque">Confirmar Reserva</button>
+            </form>
         </div>
-        <div class="tarjeta-flecha">»</div>
-    </a>
+    </section>
 
-    <a href="reservar-hora.html" class="tarjeta-servicio">
-        <div class="tarjeta-contenido">
-            <span>Control de enfermedades metabólicas</span>
-        </div>
-        <div class="tarjeta-flecha">»</div>
-    </a>
 
-    <a href="reservar-hora.html" class="tarjeta-servicio">
-        <div class="tarjeta-contenido">
-            <i class="fa-solid fa-file-medical"></i>
-            <span>Nutrición deportiva</span>
-        </div>
-        <div class="tarjeta-flecha">»</div>
-    </a>
 
-    <a href="reservar-hora.html" class="tarjeta-servicio">
-        <div class="tarjeta-contenido">
-            <i class="fa-solid fa-flask"></i>
-            <span>Alimentación vegetariana o vegana.</span>
-        </div>
-        <div class="tarjeta-flecha">»</div>
-    </a>
-
-</div>
-    </section>  
 
 
     <section class="seccion-nosotros" id ="nosotros">
@@ -77,7 +73,7 @@
 
 
 
-<footer class="pie-pagina" id="contacto">
+    <footer class="pie-pagina" id="contacto">
     <div class="footer-contenido">
         
         <div class="footer-columna">
@@ -99,6 +95,9 @@
         <p>&copy; 2026 Clínica Nutricional NutriVida.</p>
     </div>
 </footer>
-
+    
+    </div>
 </body>
 </html>
+
+ 
