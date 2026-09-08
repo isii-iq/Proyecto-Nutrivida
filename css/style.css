@@ -1,42 +1,53 @@
-header{
-     background: #8ead9e;
-  padding: 5px 10px;
+* {
+    box-sizing: border-box;
+    font-family: system-ui, "Segoe UI", Arial, sans-serif;
+}
 
-  position: sticky;
+header {
+    background: #8EAD9E;
 }
 
 header h1 {
     text-align: center;
-    font-size: 45px; 
-    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 45px;
     color: #245b43;
+    margin: 0;
 }
 
 header ul {
-    list-style: none;   
+    list-style: none;
     padding: 0;
     margin: 15px 0 0 0;
     display: flex;
-    justify-content: center; 
-    gap: 30px; }
+    justify-content: center;
+    gap: 30px;
+}
 
 header a {
-    text-decoration: none; 
-    color: rgb(34, 74, 57); 
-    font-family: system-ui, "Segoe UI", Arial, sans-serif;
+    text-decoration: none;
+    color: rgb(34, 74, 57);
     font-size: 18px;
-    
+
 }
+
 header a:hover {
     color: #b5e8c7;
 }
 
 .logo {
-    width: 10px; 
-    margin: 0; 
+    width: 100px;
+    margin: auto;
     margin-top: 0;
     margin-bottom: 0;
-    justify-content: right;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .boton-registro {
@@ -47,11 +58,11 @@ header a:hover {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    
-    position: absolute;
-    right: 20px;
-    top: 80%; 
-    transform: translateY(-50%); 
+}
+
+.botones-nav {
+    display: flex;
+    gap: 10px;
 }
 
 .boton-reservar-hora {
@@ -62,9 +73,9 @@ header a:hover {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    display: block; 
-    width: 350px; 
-    margin-top: 30px; 
+    display: block;
+    width: 350px;
+    margin-top: 30px;
     text-align: center;
     margin-left: 30px;
     margin-bottom: 100px;
@@ -72,7 +83,6 @@ header a:hover {
 
 
 .presentacion {
-
     display: flex;
     align-items: center;
     gap: 20px;
@@ -85,7 +95,7 @@ header a:hover {
     font-size: 23px;
     line-height: 1.6;
     color: #333;
-   
+
 }
 
 .boton-iniciar-sesion {
@@ -96,38 +106,34 @@ header a:hover {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    
-    position: absolute;
-    right: 160px;
-    top: 80%; 
-    transform: translateY(-50%); 
+    margin: auto;
 }
 
 .campo-error {
-  border: 2px solid #a3242f;
-  background: #fbe9ea;
+    border: 2px solid #a3242f;
+    background: #fbe9ea;
 }
 
 #formulario-registro {
-  width: 400px;
-  margin: 40px auto;
-  text-align: center;
+    width: 400px;
+    margin: 40px auto;
+    text-align: center;
 }
 
 h2 {
-  text-align: center;
+    text-align: center;
 }
 
 #formulario-registro input {
-  text-align: center;
+    text-align: center;
 }
 
 #formulario-iniciar-sesion {
-  width: 400px;
-  margin: 40px auto;
-  text-align: center;
+    width: 400px;
+    margin: 40px auto;
+    text-align: center;
 }
 
 #formulario-iniciar-sesion input {
-  text-align: center;
+    text-align: center;
 }
