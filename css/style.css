@@ -1,6 +1,8 @@
 header{
      background: #67aa80;
   padding: 5px 10px;
+
+  position: sticky;
 }
 
 header h1 {
@@ -35,4 +37,19 @@ header a:hover {
     margin-top: 0;
     margin-bottom: 0;
     justify-content: right;
+}
+
+.boton-registro {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+    position: absolute;
+    right: 20px;
+    top: 80%; 
+    transform: translateY(-50%); 
 }
