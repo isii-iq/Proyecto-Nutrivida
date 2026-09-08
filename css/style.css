@@ -56,18 +56,18 @@ header a:hover {
 
 .boton-reservar-hora {
     background-color: #c7d471;
-    color: rgb(255, 253, 253);
-    padding: 12px 20px;
+    color: rgb(34, 74, 57);
+    padding: 15px 40px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    display: block; 
-    width: 350px; 
-    margin-top: 30px; 
-    text-align: center;
-    margin-left: 30px;
-    margin-bottom: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton-reservar-hora:hover {
+    background-color: #b5e8c7;
 }
 
 
@@ -121,4 +121,118 @@ h2 {
 #formulario-registro input,
 #formulario-registro select {
   text-align: center;
+}
+
+
+.seccion-nosotros {
+    background-color: #f9fdfa; 
+    padding: 80px 20px; 
+    display: flex;
+    justify-content: center;
+}
+
+
+.contenedor-nosotros {
+    background-color: white;
+    max-width: 800px; 
+    padding: 50px;
+    border-radius: 15px; 
+  
+    box-shadow: 0 10px 30px rgba(34, 74, 57, 0.08); 
+    text-align: center; 
+   
+    border-top: 5px solid #c7d471; 
+}
+
+
+.contenedor-nosotros h2 {
+    color: rgb(34, 74, 57); 
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.contenedor-nosotros p {
+    color: #444; 
+    font-size: 18px;
+    line-height: 1.8; 
+    margin: 0;
+}
+
+
+.contenedor-nosotros strong {
+    color: #4CAF50; 
+}
+
+.verduras {
+    width: 100%;
+    max-width: 550px; 
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+    object-fit: cover;
+}
+
+.pie-pagina {
+    background-color: rgb(34, 74, 57); 
+    color: white;
+    padding: 60px 20px 20px;
+    margin-top: 80px; 
+}
+
+
+.footer-contenido {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+
+.footer-columna {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-columna h3 {
+    color: #c7d471;
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.footer-columna p {
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+
+.footer-inferior {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+    color: #999;
+    font-size: 14px;
+}
+
+.boton-iniciar-sesion:hover {
+    background-color: #b5e8c7;
+}
+
+.boton-registro:hover {
+    background-color: #b5e8c7;
+}
+
+.icono {
+    width: 100px; 
+    height: auto; 
+    margin-top: 20px; 
+}
+
+html {
+    scroll-behavior: smooth;
 }
