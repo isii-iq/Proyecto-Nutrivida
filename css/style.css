@@ -118,8 +118,17 @@ h2 {
   text-align: center;
 }
 
-#formulario-registro input,
-#formulario-registro select {
+#formulario-registro input {
+  text-align: center;
+}
+
+#formulario-iniciar-sesion {
+  width: 400px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+#formulario-iniciar-sesion input {
   text-align: center;
 }
 
