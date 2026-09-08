@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box; 
+    font-family: system-ui, "Segoe UI", Arial, sans-serif;
+}
+
 header{
      background: #8ead9e;
   padding: 5px 10px;
@@ -27,6 +32,7 @@ header a {
     font-size: 18px;
     
 }
+
 header a:hover {
     color: #b5e8c7;
 }
@@ -236,11 +242,6 @@ h2 {
     background-color: #b5e8c7;
 }
 
-.icono {
-    width: 100px; 
-    height: auto; 
-    margin-top: 20px; 
-}
 
 html {
     scroll-behavior: smooth;
@@ -312,8 +313,8 @@ html {
 }
 
 .seccion-servicios {
-    margin-top: 100px; 
-    margin-bottom: 60px; 
+    margin-top: 150px; 
+    margin-bottom: 300px; 
     padding: 0 20px;
 }
 
