@@ -116,18 +116,56 @@ header a:hover {
 }
 
 #formulario-registro {
-  width: 400px;
-  margin: 40px auto;
-  text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(34, 74, 57, 0.08);
+    width: 100%;
+    max-width: 450px;
+    border-top: 5px solid #c7d471;
+    margin: 40px auto;
+    box-sizing: border-box;
 }
 
-h2 {
-  text-align: center;
+body:has(#formulario-registro) h2 {
+    color: rgb(34, 74, 57);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
-#formulario-registro input {
-  text-align: center;
+
+#formulario-registro label {
+    color: rgb(34, 74, 57);
 }
+
+#formulario-registro input,
+#formulario-registro select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#formulario-registro .boton-registro {
+    width: 100%;
+    background-color: #c7d471;
+    color: rgb(34, 74, 57);
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#formulario-registro .boton-registro:hover {
+    background-color: #b5e8c7;
+}
+
+
 
 #formulario-iniciar-sesion {
   width: 400px;
