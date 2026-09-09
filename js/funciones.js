@@ -154,11 +154,6 @@ if (formularioRegistro) {
       errorDireccion.textContent = '';
     }
 
-    if (formularioValido) {
-      document.querySelector('#confirmacion').textContent = '¡Registro completado correctamente!';
-      formularioRegistro.reset();
-    }
-
     if (rol.value === '') {
       rol.classList.add('campo-error');
       errorRol.textContent = 'Debes seleccionar un rol.';
@@ -168,7 +163,16 @@ if (formularioRegistro) {
       errorRol.textContent = '';
     }
 
-
+    if (formularioValido) {
+      if (rol.value === 'administrador') {
+        window.location.href = 'administrador.html';
+      } else if (rol.value === 'nutricionista') {
+        window.location.href = 'nutricionista.html';
+      } else if (rol.value === 'paciente') {
+        window.location.href = 'paciente.html';
+      }
+      formularioRegistro.reset();
+    }
   });
 }
 
@@ -229,26 +233,27 @@ if (formularioLogin) {
       } else if (rol.value === 'paciente') {
         window.location.href = 'paciente.html';
       }
-    }
-
-    if (formularioValido) {
-      document.querySelector('#confirmacion').textContent = '¡Sesión iniciada correctamente!';
       formularioLogin.reset();
     }
   });
-<<<<<<< HEAD
 }
-=======
 
-  const hamburguesa = document.querySelector('#hamburguesa');
+const hamburguesa = document.querySelector('#hamburguesa');
 
-  if (hamburguesa) {
-    hamburguesa.addEventListener('click', function () {
-      const ul = document.querySelector('header ul');
-      const botonesNav = document.querySelector('.botones-nav');
-      ul.classList.toggle('abierto');
-      if (botonesNav) botonesNav.classList.toggle('abierto');
-    });
-  }
+if (hamburguesa) {
+  hamburguesa.addEventListener('click', function () {
+    const ul = document.querySelector('header ul');
+    const botonesNav = document.querySelector('.botones-nav');
+    ul.classList.toggle('abierto');
+    if (botonesNav) botonesNav.classList.toggle('abierto');
+  });
 }
->>>>>>> diseno-responsivo
+
+const formularioReserva = document.querySelector('#formulario-reserva');
+
+if (formularioReserva) {
+  formularioReserva.addEventListener('submit', function (e) {
+    e.preventDefault();
+    document.querySelector('#mensaje-exito').style.display = 'block';
+  });
+}
